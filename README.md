@@ -4,7 +4,7 @@
 <a href="https://app.netlify.com/sites/meetify-web-app/deploys"><img src="https://api.netlify.com/api/v1/badges/48bd4bb4-8d68-42e3-9c69-bc3a5a2931c1/deploy-status" alt="Netlify Status"></a></p>
 <p class="has-line-data" data-line-start="7" data-line-end="9"><em>Backend Is deployed on Heroku Cloud</em><br>
 <img src="https://heroku-badge.herokuapp.com/?app=omkayapp" alt="Heroku"></p>
-<p class="has-line-data" data-line-start="10" data-line-end="12">Dillinger is a Web Conferencing App<br>
+<p class="has-line-data" data-line-start="10" data-line-end="12">Meetify is a Web Conferencing App<br>
 ReactJS Powered Web Video Conferencing App.</p>
 <ul>
 <li class="has-line-data" data-line-start="13" data-line-end="14">Click Create a meeting</li>
