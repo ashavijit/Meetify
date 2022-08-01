@@ -57,3 +57,20 @@ npm install
 npm start //to start react-scripts
 </code></pre>
 <p class="has-line-data" data-line-start="62" data-line-end="63"><strong>Free Software, Hell Yeah!</strong></p>
+
+<h2 class="code-line" data-line-start=1 data-line-end=2 ><a id="Author_1"></a>Author</h2>
+<ul>
+<li class="has-line-data" data-line-start="3" data-line-end="4">Instagram - <a href="https://www.instagram.com/_avijit_sen.jsx">@AvijitSen</a></li>
+<li class="has-line-data" data-line-start="4" data-line-end="5">Twitter - <a href="https://www.twitter.com/AvijitSen123">@AvijitSen123</a></li>
+<li class="has-line-data" data-line-start="5" data-line-end="7">Github -<a href="https://github.com/ashavijit">@ashavijit</a></li>
+</ul>
+<h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="_Deployment_Part__7"></a><em>Deployment Part</em></h2>
+<ul>
+<li class="has-line-data" data-line-start="9" data-line-end="10">Frontend  ----&gt; <a href="https://meetify-web-app.netlify.app/">Netlify</a></li>
+<li class="has-line-data" data-line-start="10" data-line-end="12">Backend  -----&gt;  <a href="https://pure-lowlands-29685.herokuapp.com/">Heroku</a></li>
+</ul>
+<h2 class="code-line" data-line-start=12 data-line-end=13 ><a id="Repository_12"></a>Repository</h2>
+<ul>
+<li class="has-line-data" data-line-start="14" data-line-end="15">Frontend------&gt; <a href="https://github.com/ashavijit/Meetify">Client</a></li>
+<li class="has-line-data" data-line-start="15" data-line-end="16">Backend-------&gt;<a href="https://github.com/ashavijit/Meetify-Backend">Server</a></li>
+</ul>
