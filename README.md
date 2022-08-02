@@ -74,3 +74,5 @@ npm start //to start react-scripts
 <li class="has-line-data" data-line-start="14" data-line-end="15">Frontend------&gt; <a href="https://github.com/ashavijit/Meetify">Client</a></li>
 <li class="has-line-data" data-line-start="15" data-line-end="16">Backend-------&gt;<a href="https://github.com/ashavijit/Meetify-Backend">Server</a></li>
 </ul>
+
+<a href="https://wakatime.com/@55bc4aff-eab9-49ad-aa58-a380e2104dc0"><img src="https://wakatime.com/badge/user/55bc4aff-eab9-49ad-aa58-a380e2104dc0.svg" alt="Total time coded since Sep 3 2021" /></a>
