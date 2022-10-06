@@ -5,9 +5,11 @@
   <h1 align="center">Meetify</h1>
 </p>
 
+## DOCUMENTATION
+
 ## About The Project
 
-ReactJS Powered Web Video Conferencing App.
+ReactJS Powered Web Video Conferencing App. https://meetify-web-app.netlify.app/
 
 ## Features
 
@@ -39,7 +41,11 @@ cd Meetify
 cd frontend
 npm install
 npm start //to start react-scripts
+
 ```
+<div align="center">
+<img src="../public/images/Webpage" alt="Meetify" width="640" height="320" />
+</div>
 
 ## Getting Started
 
