@@ -121,3 +121,8 @@ git push -u origin <your_branch_name>
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+## Contributors
+
+<a href="https://github.com/ashavijit/Meetify/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ashavijit/Meetify" />
+</a>
