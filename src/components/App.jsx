@@ -9,6 +9,7 @@ import Sidebar from "./Sidebar";
 // pages
 import Home from "../page/Home";
 import Room from "../page/Room";
+import Join from "../page/Join.jsx";
 import NotFound from "../page/NotFound";
 import NewRoom from "../page/NewRoom";
 
@@ -20,8 +21,9 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/room/:roomID" element={<NewRoom />} /> */}
+          {/* <Route path="/Join" element={<NewRoom />} /> */}
           <Route path="/room/:roomID" element={<Room />} />
+          <Route path="/join" element={<Join />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
