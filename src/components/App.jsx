@@ -21,9 +21,10 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/Join" element={<NewRoom />} /> */}
+          {/* <Route path="//room/:roomID" element={<NewRoom />} /> */}
           <Route path="/room/:roomID" element={<Room />} />
           <Route path="/join" element={<Join />} />
+          
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
