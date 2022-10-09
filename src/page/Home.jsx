@@ -63,12 +63,14 @@ const Home = () => {
                 route={`/room/`}
               />
             </Link>
-            <HomeCard
-              title="Join Meeting"
-              desc="via invitation link"
-              icon={<JoinCallIcon />}
-              bgColor="bg-blue"
-            />
+            <Link to={`/join`} className="block w-full">
+              <HomeCard
+                title="Join Meeting"
+                desc="via invitation link"
+                icon={<JoinCallIcon />}
+                bgColor="bg-blue"
+              />
+            </Link>
           </div>
           <div className="flex gap-2 md:gap-6">
             <HomeCard
