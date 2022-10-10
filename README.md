@@ -28,6 +28,21 @@ ReactJS Powered Web Video Conferencing App. (https://meetify-web-app.netlify.app
 ![](https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)
 ![](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
+
+## Folder Structure
+
+```
+├── src/
+    ├── components/         code for different components
+    ├── constants/          constant data
+    ├── context/            code for firebase user authentication
+    ├── firebase/           code related to firebase connection 
+    ├── hooks/              custom hooks
+    ├── page/               code of different pages
+    ├── sounds/             used audio files
+ 
+```
+
 ## Installation
 
 - Meetify requires [Node.js](https://nodejs.org/) v10+ to run. 
