@@ -11,6 +11,7 @@ import Home from "../page/Home";
 import Room from "../page/Room";
 import Join from "../page/Join.jsx";
 import NotFound from "../page/NotFound";
+import Scanqr from "../page/Scanqr.jsx";
 import NewRoom from "../page/NewRoom";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           {/* <Route path="/room/:roomID" element={<NewRoom />} /> */}
           <Route path="/room/:roomID" element={<Room />} />
           <Route path="/join" element={<Join />} />
+          <Route path="/scan-qr" element={<Scanqr />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
