@@ -15,9 +15,7 @@ const NotFound = () => {
               </p>
               <h1 className="mt-2 text-4xl font-extrabold text-gris dark:text-white tracking-tight sm:text-5xl">
                 <font style={{ verticalAlign: "inherit" }}>
-                  <font style={{ verticalAlign: "inherit" }}>
-                    Page not found.
-                  </font>
+                  <font style={{ verticalAlign: "inherit" }}>Page not found.</font>
                 </font>
               </h1>
               <p className="mt-2 text-base text-gray-500 dark:text-gray-100">
@@ -30,9 +28,7 @@ const NotFound = () => {
               <div className="mt-6">
                 <Link to="/" className="text-base font-medium text-blue">
                   <font style={{ verticalAlign: "inherit" }}>
-                    <font style={{ verticalAlign: "inherit" }}>
-                      Back to home{" "}
-                    </font>
+                    <font style={{ verticalAlign: "inherit" }}>Back to home </font>
                   </font>
                   <span aria-hidden="true">
                     <font style={{ verticalAlign: "inherit" }}>

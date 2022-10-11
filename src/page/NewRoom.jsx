@@ -27,11 +27,7 @@ const fakeMessages = [
 
 const Message = ({ name, message }) => {
   return (
-    <div
-      className={`flex w-full ${
-        Math.random() * 4 >= 2 ? " justify-end text-right" : ""
-      }`}
-    >
+    <div className={`flex w-full ${Math.random() * 4 >= 2 ? " justify-end text-right" : ""}`}>
       <div className="w-4/5 p-2 bg-slate-300 rounded ">{message}</div>
     </div>
   );
@@ -185,11 +181,7 @@ const Room = () => {
             <div className="p-3 border-b">Chatting</div>
             <div className="p-3 flex flex-col gap-3 h-full w-full overflow-y-scroll">
               {fakeMessages.map((message, i) => (
-                <Message
-                  name={message.name}
-                  key={i}
-                  message={message.message}
-                />
+                <Message name={message.name} key={i} message={message.message} />
               ))}
             </div>
             <div className="p-3 border-t">
