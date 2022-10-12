@@ -27,15 +27,7 @@ const Home = () => {
     "November",
     "December",
   ];
-  const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const [date, setDate] = useState(new Date());
 
   function refreshClock() {
@@ -89,13 +81,9 @@ const Home = () => {
           <div>
             <div className="p-3 md:p-4 md:rounded-xl rounded md:text-base text-sm md:mt-6 mt-2 text-white md:font-semibold text-center w-full bg-blue">
               Made with love by
-              <a
-                href="https://github.com/ashavijit"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+              <a href="https://github.com/ashavijit" target={"_blank"} rel="noreferrer">
                 {" "}
-                Avijit <></>Sen 
+                Avijit <></>Sen
               </a>
             </div>
           </div>
@@ -104,12 +92,8 @@ const Home = () => {
           <div className="relative md:h-52 w-full bg-slate-500 rounded md:rounded-2xl p-3">
             <div className="md:absolute bottom-2 left-2 md:bottom-6 md:left-6">
               <p className="md:text-7xl text-4xl text-white">
-                {`${
-                  date.getHours() < 10 ? `0${date.getHours()}` : date.getHours()
-                }:${
-                  date.getMinutes() < 10
-                    ? `0${date.getMinutes()}`
-                    : date.getMinutes()
+                {`${date.getHours() < 10 ? `0${date.getHours()}` : date.getHours()}:${
+                  date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes()
                 }`}
               </p>
               <p className="text-slate-300 font-thin my-1">

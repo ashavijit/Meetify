@@ -160,9 +160,7 @@ const Room = () => {
             });
 
             socket.current.on("receiving returned signal", (payload) => {
-              const item = peersRef.current.find(
-                (p) => p.peerID === payload.id
-              );
+              const item = peersRef.current.find((p) => p.peerID === payload.id);
               item.peer.signal(payload.signal);
             });
 
@@ -230,14 +228,8 @@ const Room = () => {
             </div>
           ) : (
             user && (
-              <motion.div
-                layout
-                className="flex flex-row bg-darkBlue2 text-white w-full"
-              >
-                <motion.div
-                  layout
-                  className="flex flex-col bg-darkBlue2 justify-between w-full"
-                >
+              <motion.div layout className="flex flex-row bg-darkBlue2 text-white w-full">
+                <motion.div layout className="flex flex-col bg-darkBlue2 justify-between w-full">
                   <div
                     className="flex-shrink-0 overflow-y-scroll p-3"
                     style={{
@@ -247,16 +239,13 @@ const Room = () => {
                     <motion.div
                       layout
                       className={`grid grid-cols-1 gap-4  ${
-                        showChat
-                          ? "md:grid-cols-2"
-                          : "lg:grid-cols-3 sm:grid-cols-2"
+                        showChat ? "md:grid-cols-2" : "lg:grid-cols-3 sm:grid-cols-2"
                       } `}
                     >
                       <motion.div
                         layout
                         className={`relative bg-lightGray rounded-lg aspect-video overflow-hidden ${
-                          pin &&
-                          "md:col-span-2 md:row-span-2 md:col-start-1 md:row-start-1"
+                          pin && "md:col-span-2 md:row-span-2 md:col-start-1 md:row-start-1"
                         }`}
                       >
                         <div className="absolute top-4 right-4 z-20">
@@ -320,11 +309,7 @@ const Room = () => {
                       </motion.div>
                       {peers.map((peer) => (
                         // console.log(peer),
-                        <MeetGridCard
-                          key={peer?.peerID}
-                          user={peer.user}
-                          peer={peer?.peer}
-                        />
+                        <MeetGridCard key={peer?.peerID} user={peer.user} peer={peer?.peer} />
                       ))}
                     </motion.div>
                   </div>
@@ -339,8 +324,7 @@ const Room = () => {
                                 : "bg-slate-800/70 backdrop-blur border-gray"
                             } border-2  p-2 cursor-pointer rounded-xl text-white text-xl`}
                             onClick={() => {
-                              const audio =
-                                localVideo.current.srcObject.getAudioTracks()[0];
+                              const audio = localVideo.current.srcObject.getAudioTracks()[0];
                               if (micOn) {
                                 audio.enabled = false;
                                 setMicOn(false);
@@ -394,9 +378,7 @@ const Room = () => {
                           }}
                         >
                           <CallEndIcon size={20} />
-                          <span className="hidden sm:block text-xs">
-                            End Call
-                          </span>
+                          <span className="hidden sm:block text-xs">End Call</span>
                         </button>
                       </div>
                       <div className="flex gap-2">
@@ -543,9 +525,7 @@ const Room = () => {
                               animate={{ x: 0, opacity: 1 }}
                               transition={{ duration: 0.08 }}
                               className={`flex gap-2 ${
-                                msg?.user.id === user?.uid
-                                  ? "flex-row-reverse"
-                                  : ""
+                                msg?.user.id === user?.uid ? "flex-row-reverse" : ""
                               }`}
                               key={index}
                             >
@@ -601,15 +581,9 @@ const Room = () => {
             <div className="fixed flex items-center justify-center top-0 left-0 h-full w-full z-30 bg-slate-800/60 backdrop-blur">
               <div className="bg-white  p-3 rounded shadow shadow-white w-full mx-auto max-w-[500px] relative">
                 <div className="flex items-center justify-between">
-                  <div className="text-slate-800">
-                    Share the link with someone to join the room
-                  </div>
+                  <div className="text-slate-800">Share the link with someone to join the room</div>
                   <div>
-                    <ClearIcon
-                      size={30}
-                      color="#121212"
-                      onClick={() => setShare(false)}
-                    />
+                    <ClearIcon size={30} color="#121212" onClick={() => setShare(false)} />
                   </div>
                 </div>
                 <div className="my-5 rounded flex items-center justify-between gap-2 text-sm text-slate-500 bg-slate-200 p-2 ">
@@ -621,9 +595,7 @@ const Room = () => {
                   </div>
                   <CopyToClipboardIcon
                     className="cursor-pointer"
-                    onClick={() =>
-                      navigator.clipboard.writeText(window.location.href)
-                    }
+                    onClick={() => navigator.clipboard.writeText(window.location.href)}
                   />
                 </div>
                 <div className="flex w-full aspect-square h-full justify-center items-center">

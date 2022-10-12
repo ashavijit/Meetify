@@ -1,18 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const JoinCard = ({ icon, title, desc, bgColor, route }) => {
-
   let navigate = useNavigate();
   const [joininglink, setJoininglink] = useState("");
   const [roomId, setroomId] = useState("");
 
   const joinroomusingid = () => {
     setroomId(joininglink.slice(joininglink.indexOf("/room/")));
-    navigate(`${roomId}`); 
-  }
+    navigate(`${roomId}`);
+  };
 
   return (
     <div
@@ -27,23 +26,16 @@ const JoinCard = ({ icon, title, desc, bgColor, route }) => {
           {icon}
         </div>
         <div className="flex-shrink-0 md:mb-5">
-          <p className="text-white md:mb-1 text-sm md:text-2xl md:font-bold">
-            {title}
-          </p>
-          <p className="text-slate-200 text-sm font-thin hidden md:block">
-            {desc}
-          </p>
+          <p className="text-white md:mb-1 text-sm md:text-2xl md:font-bold">{title}</p>
+          <p className="text-slate-200 text-sm font-thin hidden md:block">{desc}</p>
         </div>
-      
       </div>
       <div className="bg-dark"></div>
       <div className="text-white">
         <p className="py-2">Enter the Invite Link</p>
         <input type="text" value={joininglink} onChange={(e) => { setJoininglink(e.target.value) }} className="wd form-control text-black px-2 py-1" placeholder="Link Here..!"/><br/>
         <button className="my-11 px-4 py-1 rounded-lg border border-danger" onClick={joinroomusingid}>Join Meeting</button>
-        <Link to="/scan-qr">
         <button className="my-11 mx-2 px-4 py-1 rounded-lg border border-danger" >Scan Invite QR</button>
-        </Link>
       </div>
     </div>
   );
