@@ -22,11 +22,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               `relative flex items-center justify-center h-9 w-9 my-3 mx-auto  text-xl text-white group
               duration-75 hover:bg-lightGray hover:border-[1px] rounded-lg border-slate-700
-              ${
-                isActive
-                  ? "bg-lightGray border-[1px] rounded-lg border-slate-700"
-                  : "bg-blue-500"
-              }`
+              ${isActive ? "bg-lightGray border-[1px] rounded-lg border-slate-700" : "bg-blue-500"}`
             }
           >
             <div>

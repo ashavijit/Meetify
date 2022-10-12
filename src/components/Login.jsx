@@ -30,10 +30,7 @@ const App = () => {
           onSuccess={responseGoogle}
           onError={responseGoogleError}
           render={(renderProps) => (
-            <button
-              onClick={renderProps.onClick}
-              disabled={renderProps.disabled}
-            >
+            <button onClick={renderProps.onClick} disabled={renderProps.disabled}>
               Login
             </button>
           )}
