@@ -8,6 +8,11 @@ body {
   font-family: "Poppings", sans-serif;
 }
 
+.boxx {
+  width: 20rem;
+  height: 20rem;
+}
+
 .joinpage {
   display: flex;
   align-items: center;
