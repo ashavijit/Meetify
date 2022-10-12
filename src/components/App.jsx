@@ -25,7 +25,7 @@ const App = () => {
           {/* <Route path="/room/:roomID" element={<NewRoom />} /> */}
           <Route path="/room/:roomID" element={<Room />} />
           <Route path="/join" element={<Join />} />
-          <Route path="/scan-qr" element={<Scanqr />} />
+          <Route path="/scanqr" element={<Scanqr />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
