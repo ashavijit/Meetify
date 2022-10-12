@@ -5,7 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ 'main' ]
+  pull_request:
+    branches: [ 'main' ]
 
 jobs:
   build:
@@ -21,6 +23,21 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm install
+      
     - name: echo installed is done
       run: echo Installed npm packages ...
+      
+    - name: Run the tests
+      run: npm test
+      
+    - name: Build
+      run: npm run build
+    
+    - name: deploy 
+    -  uses: amondnet/vercel-action@v20
+       with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_TL_ENGINE }}
+        scope: ${{ secrets.VERCEL_ORG_ID }} 
     
