@@ -14,12 +14,8 @@ const HomeCard = ({ icon, title, desc, bgColor, route }) => {
           {icon}
         </div>
         <div className="flex-shrink-0 md:mb-5">
-          <p className="text-white md:mb-1 text-sm md:text-2xl md:font-bold">
-            {title}
-          </p>
-          <p className="text-slate-200 text-sm font-thin hidden md:block">
-            {desc}
-          </p>
+          <p className="text-white md:mb-1 text-sm md:text-2xl md:font-bold">{title}</p>
+          <p className="text-slate-200 text-sm font-thin hidden md:block">{desc}</p>
         </div>
       </div>
     </div>

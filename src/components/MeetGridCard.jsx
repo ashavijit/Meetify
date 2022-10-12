@@ -15,9 +15,7 @@ const MeetGridCard = ({ user, micActive, peer }) => {
   const [videoActive, setVideoActive] = useState(true);
   useEffect(() => {
     peer.on("stream", (stream) => {
-      setVideoActive(
-        stream.getTracks().find((track) => track.kind === "video").enabled
-      );
+      setVideoActive(stream.getTracks().find((track) => track.kind === "video").enabled);
       videoRef.current.srcObject = stream;
     });
   }, []);
@@ -31,9 +29,7 @@ const MeetGridCard = ({ user, micActive, peer }) => {
       <div className="absolute top-4 right-4 z-30">
         <button
           className={`${
-            pin
-              ? "bg-blue border-transparent"
-              : "bg-slate-800/70 backdrop-blur border-gray"
+            pin ? "bg-blue border-transparent" : "bg-slate-800/70 backdrop-blur border-gray"
           } md:border-2 border-[1px] aspect-square md:p-2.5 p-1.5 cursor-pointer md:rounded-xl rounded-lg text-white md:text-xl text-lg`}
           onClick={() => {
             setPin(!pin);
