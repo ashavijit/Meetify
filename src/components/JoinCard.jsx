@@ -33,10 +33,26 @@ const JoinCard = ({ icon, title, desc, bgColor, route }) => {
       <div className="bg-dark"></div>
       <div className="text-white">
         <p className="py-2">Enter the Invite Link</p>
-        <input type="text" value={joininglink} onChange={(e) => { setJoininglink(e.target.value) }} className="wd form-control text-black px-2 py-1" placeholder="Link Here..!" /><br />
-        <button className="my-11 px-4 py-1 rounded-lg border border-danger" onClick={joinroomusingid}>Join Meeting</button>
+        <input
+          type="text"
+          value={joininglink}
+          onChange={(e) => {
+            setJoininglink(e.target.value);
+          }}
+          className="wd form-control text-black px-2 py-1"
+          placeholder="Link Here..!"
+        />
+        <br />
+        <button
+          className="my-11 px-4 py-1 rounded-lg border border-danger"
+          onClick={joinroomusingid}
+        >
+          Join Meeting
+        </button>
         <Link to="/scanqr">
-        <button className="my-11 mx-2 px-4 py-1 rounded-lg border border-danger" >Scan Invite QR</button>
+          <button className="my-11 mx-2 px-4 py-1 rounded-lg border border-danger">
+            Scan Invite QR
+          </button>
         </Link>
       </div>
     </div>
