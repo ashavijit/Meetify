@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HomeCard from "../components/HomeCard";
+import { useAuth } from "../context/AuthContext";
 
 import { v4 as uuid } from "uuid";
 
@@ -13,6 +14,8 @@ import { Link } from "react-router-dom";
 const roomId = uuid();
 
 const Home = () => {
+  const { user } = useAuth();
+
   const months = [
     "January",
     "February",
@@ -91,6 +94,8 @@ const Home = () => {
         <div className="flex-grow md:h-screen md:border-l-2 border-lightGray p-3 md:p-4">
           <div className="relative md:h-52 w-full bg-slate-500 rounded md:rounded-2xl p-3">
             <div className="md:absolute bottom-2 left-2 md:bottom-6 md:left-6">
+              {user && <h1 className="text-4xl">Welcome {user?.displayName}</h1>}
+
               <p className="md:text-7xl text-4xl text-white">
                 {`${date.getHours() < 10 ? `0${date.getHours()}` : date.getHours()}:${
                   date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes()
