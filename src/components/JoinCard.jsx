@@ -49,9 +49,11 @@ const JoinCard = ({ icon, title, desc, bgColor, route }) => {
         >
           Join Meeting
         </button>
-        <button className="my-11 mx-2 px-4 py-1 rounded-lg border border-danger">
-          Scan Invite QR
-        </button>
+        <Link to="/scanqr">
+          <button className="my-11 mx-2 px-4 py-1 rounded-lg border border-danger">
+            Scan Invite QR
+          </button>
+        </Link>
       </div>
     </div>
   );
