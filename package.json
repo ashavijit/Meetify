@@ -13,6 +13,7 @@
     "react-google-login": "^5.2.2",
     "react-icons": "^4.3.1",
     "react-qr-code": "^2.0.3",
+    "react-qr-reader": "^3.0.0-beta-1",
     "react-qrcode-logo": "^2.6.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
@@ -28,7 +29,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx,json}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,json}'",
-    "format": "prettier --write 'src/**/*.{js,jsx,json}'"
+    "format": "prettier --write 'src/**/*.{js,jsx,json}'",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -53,9 +55,16 @@
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.9",
+    "eslint-plugin-react": "^7.31.10",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.6",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.0.18"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "eslint --fix"
+    ]
   }
 }
