@@ -7,7 +7,7 @@ import { AiOutlineLogout as LogOutIcon } from "react-icons/ai";
 const Header = () => {
   const { user, login, logout } = useAuth();
   return (
-    <div className="h-16 px-3 bg-darkBlue1 text-slate-300 w-full flex items-center border-b-2 border-lightGray">
+    <div className="h-16 px-3 text-3xl bg-darkBlue1 text-slate-300 w-full flex items-center border-b-2 border-lightGray">
       <div className="flex-grow font-semibold">
         <Link to="/">Sonic Meet</Link>
       </div>
@@ -29,7 +29,7 @@ const Header = () => {
           </div>
         ) : (
           <button
-            className="bg-yellow py-1 px-5 text-white  font-semibold text-xs cursor-pointer rounded border-2 border-transparent hover:border-yellow hover:bg-transparent hover:text-yellow duration-200"
+            className="bg-yellow py-2 px-6 text-white  font-semibold text-xs cursor-pointer rounded border-2 border-transparent hover:border-yellow hover:bg-transparent hover:text-yellow duration-200"
             onClick={login}
           >
             Login
