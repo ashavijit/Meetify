@@ -41,26 +41,6 @@ body {
   box-sizing: border-box;
 }
 
-.backgroundImage1 {
-  background: url("../public/images/bg1.jpg");
-}
-
-.backgroundImage2 {
-  background: url("../public/images/bg2.jpg");
-}
-
-.backgroundImage3 {
-  background: url("../public/images/bg3.jpg");
-}
-
-.backgroundImage4 {
-  background: url("../public/images/bg4.jpg");
-}
-
-.backgroundImage5 {
-  background: url("../public/images/bg5.jpg");
-}
-
 /* 
 @layer components {
   .sidebar-icon {
